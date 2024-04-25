@@ -96,29 +96,30 @@ go run main.go
 
 # 演示
 - 测试http连接
+![img.png](img/img.png)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/7ddfc3253d3d4df48460eea2772ede60.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
 - 进行ws连接，连接服务器
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/cb69e11c10d341abb4a421d304c3c6e1.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
+![img_1.png](img/img_1.png)
 
 
 - 当id=1上线，但是id=2没上线的时候发送消息
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/b52f92d1437b4d4891c47c2187ffdd65.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
+![img_2.png](img/img_2.png)
 
 - 当id=2上线之后
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/c2a2fd17956846d6be96745e452987fd.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
+![img_3.png](img/img_3.png)
 
 - 再次发消息，就是在线应答了
+![img_4.png](img/img_4.png)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/715dee6ffb224f77a788a80e17539cb3.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
+
 
 - 这边就实时接受到消息了
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/4f0495ef968940a28b49e0c5b3e9f346.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
+![img_5.png](img/img_5.png)
 
 - 获取历史信息
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2e88c30fa5ce47ce94b681a5ffeafb88.png?x-oss-process=image/watermark,type_d3F5LXplbmhlaQ,shadow_50,text_Q1NETiBA5bCP55Sf5Yeh5LiA,size_20,color_FFFFFF,t_70,g_se,x_16)
+![img_6.png](img/img_6.png)

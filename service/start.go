@@ -61,6 +61,7 @@ func (manager *ClientManager) Start() {
 				}
 				msg, _ := json.Marshal(replyMsg)
 				_ = broadcast.Client.Socket.WriteMessage(websocket.TextMessage, msg)
+				//消息异步入库
 				m := consts.Msg{
 					Datebase: conf.MongoDBName,
 					Id:       id,
@@ -73,10 +74,6 @@ func (manager *ClientManager) Start() {
 
 				_ = mq.SendMessage2MQ(body)
 
-				//err = InsertMsg(conf.MongoDBName, id, string(message), 1, int64(3*month))
-				//if err != nil {
-				//	fmt.Println("InsertOneMsg Err", err)
-				//}
 			} else {
 				log.Println("对方不在线")
 				replyMsg := ReplyMsg{
@@ -95,10 +92,7 @@ func (manager *ClientManager) Start() {
 
 				body, _ := json.Marshal(m)
 				_ = mq.SendMessage2MQ(body)
-				//err = InsertMsg(conf.MongoDBName, id, string(message), 0, int64(3*month))
-				//if err != nil {
-				//	fmt.Println("InsertOneMsg Err", err)
-				//}
+
 			}
 		}
 	}
