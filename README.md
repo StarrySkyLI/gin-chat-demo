@@ -8,6 +8,7 @@ gin+websocket+mongodb实现 IM 即时聊天系统
 - `MySQL` 用来存储用户基本信息
 - `MongoDB` 用来存放用户聊天信息
 - `Redis` 用来存储处理过期信息
+- ·rabbitmq`做信息的异步入库
 
 
 
